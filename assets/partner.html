@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheel fusion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="nav-bar">
+      <nav class="nav">
+       <a href="index.html">
+        <div class="logo">
+            <img src="images/images.png" alt="Logo" />
+          </div>
+       </a>
+        <div class="search">
+          <div class="input-field" id="areaInput">
+            <input type="text" placeholder="Choose your area" readonly />
+            <i class="fa-solid fa-location-arrow"></i>
+            <div class="dropdown" id="dropdown">
+              <button onclick="getLocation()">Use Live Location</button>
+              <button onclick="manualLocation()">Enter Manually</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <div class="footer-menue">
+        <nav class="footer-navbar">
+          <ul>
+            <li>
+              <a href="../index.html">
+                <i class="fa-solid fa-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+            <a href="history.html">
+              <i class="fa-solid fa-map-marked-alt"></i>
+              <span>History</span>
+            </a>
+            </li>
+            <li>
+              <a href="account.html"><i class="fa-solid fa-user"></i>
+                  <span>Profile</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  <script src="js/script.js"></script>
+  </body>
+  </html>
+  
