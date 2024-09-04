@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function () {
+  getLocation(); // Automatically fetch location when the page loads
+});
   // JavaScript to handle the dropdown and location selection
   document.getElementById("areaInput").addEventListener("click", function () {
     document.getElementById("dropdown").style.display = "block";
@@ -21,6 +24,8 @@
       .then((response) => response.json())
       .then((data) => {
         const locationName = data.display_name;
+        console.log(locationName);
+        
         document.querySelector(".input-field input").value = locationName;
         document.getElementById("dropdown").style.display = "none";
       })
@@ -63,6 +68,18 @@
   window.addEventListener("click", function (e) {
     if (!document.getElementById("areaInput").contains(e.target)) {
       document.getElementById("dropdown").style.display = "none";
+    }
+  });
+  
+
+  document.getElementById('destination').addEventListener('change', function() {
+    const destination = this.value.trim();
+    console.log(destination);
+    
+    // Check if the destination input is not empty
+    if (destination !== "") {
+      // Redirect to rides.html page
+      window.location.href = "assets/rides.html";
     }
   });
   
