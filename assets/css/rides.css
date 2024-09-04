@@ -1,0 +1,54 @@
+body{
+    padding-bottom: 78px;
+}
+.ride-box {
+border: 1px solid #e2e2e2;
+border-radius: 10px;
+padding: 20px;
+margin: 10px 13px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: hwb(0 100% 0%);
+box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    width: 104px;
+    height: 120px;
+    position: absolute;
+    left: -2px;
+    top: -20px;
+}
+.nav{
+    padding: 22px 20px;
+}
+.ride-info {
+display: flex;
+align-items: center;
+}
+
+.user-image {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+margin-right: 15px;
+object-fit: cover;
+}
+
+.ride-details {
+line-height: 1.5;
+}
+
+.connect-btn {
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+background-color: #0056b3;
+}
