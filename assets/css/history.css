@@ -9,12 +9,22 @@ body{
     margin: 0 auto;
     margin-top: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    background-color: #2c3e50; 
+    background-color: #039DD9; 
     color: white;
     display: flex;
     padding: 15px; 
 }
+.nav{
+    padding: 18px 20px;
+}
 
+.logo img {
+    width: 106px;
+    height: 140px;
+    position: absolute;
+    left: -2px;
+    top: -30px;
+}
 .user-profile img {
     border-radius: 50%; 
     width: 60px;
