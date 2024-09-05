@@ -83,3 +83,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+
+
+  document.getElementById("petrolCalcForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+      
+          // Get the input values
+          const distance = document.getElementById("distance").value;
+          const average = document.getElementById("average").value;
+          const price = document.getElementById("price").value;
+      
+          // Calculate the total petrol cost
+          const litersNeeded = distance / average;
+          const totalCost = litersNeeded * price;
+      
+          // Display the result
+          document.getElementById("result").innerHTML = `Total Cost: ₹${totalCost.toFixed(2)}`;
+        });
