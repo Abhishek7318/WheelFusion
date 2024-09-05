@@ -1,0 +1,40 @@
+ .calculator {
+          padding: 20px;
+          background: #f4f4f4;
+          border-radius: 10px;
+          text-align: center;
+        }
+      
+        .calculator h2 {
+          margin-bottom: 20px;
+        }
+      
+        .form-group {
+          margin-bottom: 15px;
+        }
+      
+        .form-group label {
+          display: block;
+          margin-bottom: 5px;
+        }
+      
+        .form-group input {
+          width: 100%;
+          padding: 10px;
+          border-radius: 15px;
+          border: 1px solid #ccc;
+        }
+      
+        button {
+          padding: 10px 20px;
+          background-color: #00a7ff;
+          color: white;
+          border: none;
+          border-radius: 35px;
+          cursor: pointer;
+        }
+      
+        #result {
+          margin-top: 20px;
+          font-size: 1.2em;
+        }
