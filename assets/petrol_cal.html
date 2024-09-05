@@ -9,8 +9,50 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-        <link rel="stylesheet" href="css/petrol.css">
     <link rel="stylesheet" href="css/rides.css">
+    <link rel="stylesheet" href="css/petrol.css">
+    <style>
+        .calculator {
+          padding: 20px;
+          background: #f4f4f4;
+          border-radius: 10px;
+          text-align: center;
+        }
+      
+        .calculator h2 {
+          margin-bottom: 20px;
+        }
+      
+        .form-group {
+          margin-bottom: 15px;
+        }
+      
+        .form-group label {
+          display: block;
+          margin-bottom: 5px;
+        }
+      
+        .form-group input {
+          width: 100%;
+          padding: 10px;
+          border-radius: 15px;
+          border: 1px solid #ccc;
+        }
+      
+        button {
+          padding: 10px 20px;
+          background-color: #00a7ff;
+          color: white;
+          border: none;
+          border-radius: 35px;
+          cursor: pointer;
+        }
+      
+        #result {
+          margin-top: 20px;
+          font-size: 1.2em;
+        }
+      </style>
   </head>
   <body>
     <header class="nav-bar">
@@ -76,6 +118,23 @@
           </ul>
         </nav>
       </div>
+      <script>
+        document.getElementById("petrolCalcForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+      
+          // Get the input values
+          const distance = document.getElementById("distance").value;
+          const average = document.getElementById("average").value;
+          const price = document.getElementById("price").value;
+      
+          // Calculate the total petrol cost
+          const litersNeeded = distance / average;
+          const totalCost = litersNeeded * price;
+      
+          // Display the result
+          document.getElementById("result").innerHTML = `Total Cost: ₹${totalCost.toFixed(2)}`;
+        });
+      </script>
   <script src="js/script.js"></script>
   </body>
   </html>
