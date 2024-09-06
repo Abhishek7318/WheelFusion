@@ -93,3 +93,9 @@ document.getElementById('destination').addEventListener('change', function() {
       window.location.href = "assets/rides.html";
   }
 });
+
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
